@@ -1,0 +1,19 @@
+{
+  "name": "01_servidor_basico",
+  "version": "1.0.0",
+  "description": "crea un servidor básico",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Piercing/NodeServidorBasico.git"
+  },
+  "author": "Piercing",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Piercing/NodeServidorBasico/issues"
+  },
+  "homepage": "https://github.com/Piercing/NodeServidorBasico#readme"
+}
