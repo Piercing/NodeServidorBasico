@@ -1,4 +1,6 @@
 "use strict";
+
+// ****************** DOS EJEMPLOS DE FUNCIONES ASÍNCRONAS ********************//
 //************************ FUNCIÓN ASÍNCRONA CON BUCLE **********************//
 console.log('empiezo');
 
