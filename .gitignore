@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 ### Node template
 # Logs
@@ -5,6 +6,8 @@ logs
 *.log
 npm-debug.log*
 
+=======
+>>>>>>> 63d8e6ab754257933ba207bccce72c3a4aee5339
 # Logs
 logs
 *.log
@@ -30,6 +33,7 @@ coverage
 build/Release
 
 # Dependency directory
+<<<<<<< HEAD
 
 # https://docs.npmjs.com/misc/faq#should-i-check-my-node-modules-folder-into-git
 node_modules
@@ -39,3 +43,7 @@ node_modules
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
 node_modules
 
+=======
+# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
+node_modules
+>>>>>>> 63d8e6ab754257933ba207bccce72c3a4aee5339
