@@ -26,10 +26,6 @@ escribeTras2Segundos('texto1', function(){
 
 
 
-
-
-
-
 console.log('empiezo');
 
 var escribeTras2Segundos = function (texto, callBack) {
