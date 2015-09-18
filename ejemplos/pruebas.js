@@ -23,9 +23,9 @@
     return x;
 };
  console.log(x, y());
- */
 
-/*var objeto = {
+
+ /*var objeto = {
  numero: 1,
  texto: "hola",
  esCero: function (v) {
@@ -57,22 +57,22 @@
  }
  }catch(e){
  console.log(e.message);
- }*/
+ }
 
-// Hoisting de variables
-// LLeva a la variable arriba
-// dando como resultado undefined
-/*var valor = 'hola';
+ // Hoisting de variables
+ // LLeva a la variable arriba
+ // dando como resultado undefined
+ /*var valor = 'hola';
 
  function pinta() {
  console.log(valor);
  var valor = 'adios';
  };
 
- pinta();*/
+ pinta();
 
 
-/*var Coche = function(marca){
+ /*var Coche = function(marca){
  this.name = marca;
  };
 
@@ -82,23 +82,23 @@
 
  var c = (false == 0);
  var d = (false == "");
- console.log(c, d);*/
-//
-//{
+ console.log(c, d);
+ //
+ //{
 //    "nombre": javier",
 //    "apellido": "garcia"
 //};
 
-var Coche = function (name) {
+ var Coche = function (name) {
     this.name = name;
     this.saluda = function () {
         console.log('Hola soy ' + this.name);
     }
 };
 
-var tesla = new Coche('Tesla');
+ var tesla = new Coche('Tesla');
 
-var Planta = function (name) {
+ var Planta = function (name) {
     this.name = name;
     this.crece = tesla.saluda();// reutilizo el método
     this.crece1 = function () {
@@ -107,20 +107,47 @@ var Planta = function (name) {
 };
 
 
-// Creamos un objeto
+ // Creamos un objeto
 
-//// llamamos a método
-//tesla.saluda();
-//
-//// Otro llama al método
-//setTimeout(tesla.saluda.bind(tesla), 1000);
+ //// llamamos a método
+ //tesla.saluda();
+ //
+ //// Otro llama al método
+ //setTimeout(tesla.saluda.bind(tesla), 1000);
 
-var planta = new Planta('flor');
+ var planta = new Planta('flor');
 
-console.log(planta.name);
+ console.log(planta.name);
 
-planta.crece();
-//planta.crece1();
+ planta.crece();
+ //planta.crece1();
+
+ */
+
+console.log('empiezo prueba');
+
+var prueba = function (texto, callback) {
+    setTimeout(function () {
+        console.log(texto);
+        callback();
+    }, 2000);
+
+};
+
+var ejecutoPrureba = function (n, prueba, callbackFin) {
+    if (n > 0) {
+        n--;
+        prueba('texto', function () {
+            ejecutoPrureba(n, prueba, callbackFin);
+        });
+    } else {
+        callbackFin();
+    }
+}
+
+ejecutoPrureba(3, prueba, function () {
+    console.log('termino prueba');
+});
 
 
 
